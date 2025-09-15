@@ -47,16 +47,79 @@
     "security": "24/7 Security",
     "concierge": "Concierge Service",
     "kids": "Kids Playground",
-    "business": "Business Center"
+    "business": "Business Center",
+    "items": {
+      "pool": {
+        "title": "Resort-Style Pool",
+        "description": "Temperature-controlled infinity pool with poolside service"
+      },
+      "gym": {
+        "title": "State-of-Art Gym",
+        "description": "24/7 fitness center with premium equipment and personal trainers"
+      },
+      "spa": {
+        "title": "Wellness Spa",
+        "description": "Full-service spa with massage rooms and relaxation areas"
+      },
+      "kidsArea": {
+        "title": "Kids Play Area",
+        "description": "Safe and supervised children's playground and activity zone"
+      },
+      "gardens": {
+        "title": "Landscaped Gardens",
+        "description": "Beautifully maintained gardens with walking paths"
+      },
+      "parking": {
+        "title": "Parking",
+        "description": "Covered parking for residents"
+      },
+      "gaming": {
+        "title": "Gaming Lounge",
+        "description": "Modern gaming and entertainment center"
+      },
+      "wifi": {
+        "title": "High-Speed WiFi",
+        "description": "Complimentary high-speed internet throughout"
+      },
+      "retail": {
+        "title": "Retail Outlets",
+        "description": "Convenient shopping and services within the complex"
+      },
+      "community": {
+        "title": "Community Hall",
+        "description": "Multipurpose hall for events and gatherings"
+      }
+    }
   },
   "location": {
-    "title": "Perfect Location",
-    "subtitle": "Strategically located in central Tashkent",
+    "title": "Prime Location & Connectivity",
+    "subtitle": "Strategically located in the center with unparalleled access to the city's key destinations",
     "connectivity": "Connectivity",
     "landmarks": "Key Landmarks",
     "transport": "Transport Links",
     "minutes": "minutes",
     "km": "km",
+    "mapAlt": "Veranda Residences Location Map",
+    "address": "Mirzo Ulugbek district, Yangi Uzbekistan street",
+    "minutesAway": "Minutes Away From Everything",
+    "viewMap": "View Interactive Map",
+    "transportationAccess": "Easy Transportation Access",
+    "transportOptions": {
+      "byCar": "By Car",
+      "byCarDesc": "Easy access to the center and major highways",
+      "metroStation": "Metro Station",
+      "metroStationDesc": "5 minutes walk to Metro Station",
+      "publicTransport": "Public Transport",
+      "publicTransportDesc": "Multiple bus routes and taxi services available"
+    },
+    "landmarks": {
+      "airport": "Tashkent International Airport",
+      "megaPlanet": "Mega Planet Shopping Center",
+      "cityCenter": "Tashkent City Center",
+      "comprador": "Comprador Shopping Center",
+      "businessDistrict": "Business District",
+      "university": "Tashkent State University"
+    },
     "places": {
       "airport": "Airport",
       "metro": "Metro Station",
@@ -119,7 +182,7 @@
   "footer": {
     "description": "Your trusted partner for premium residential complexes in Uzbekistan",
     "quickLinks": "Quick Links",
-    "services": "Our Services",
+    "servicesTitle": "Our Services",
     "stayConnected": "Stay Connected",
     "newsletter": "Subscribe to our newsletter for the latest updates and exclusive offers",
     "subscribe": "Subscribe",

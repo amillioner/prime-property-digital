@@ -47,16 +47,79 @@
     "security": "24/7 xavfsizlik",
     "concierge": "Konsyerj xizmati",
     "kids": "Bolalar maydonchasi",
-    "business": "Biznes markaz"
+    "business": "Biznes markaz",
+    "items": {
+      "pool": {
+        "title": "Kurort hovuzi",
+        "description": "Hovuz yonida xizmat ko'rsatiladigan haroratni boshqariladigan cheksiz hovuz"
+      },
+      "gym": {
+        "title": "Zamonaviy sport zali",
+        "description": "Premium jihozlar va shaxsiy murabbiylar bilan 24/7 fitnes markazi"
+      },
+      "spa": {
+        "title": "SPA markaz",
+        "description": "Massaj xonalari va dam olish zonalari bilan to'liq SPA xizmati"
+      },
+      "kidsArea": {
+        "title": "Bolalar o'yin maydoni",
+        "description": "Xavfsiz va nazorat qilinadigan bolalar maydonchasi va faoliyat zonasi"
+      },
+      "gardens": {
+        "title": "Landshaft bog'lari",
+        "description": "Yurish yo'llari bilan chiroyli parvarish qilinadigan bog'lar"
+      },
+      "parking": {
+        "title": "Avtoturargoh",
+        "description": "Turar-joy aholisi uchun yopiq avtoturargoh"
+      },
+      "gaming": {
+        "title": "O'yin zali",
+        "description": "Zamonaviy o'yin va o'yin-kulgi markazi"
+      },
+      "wifi": {
+        "title": "Tez WiFi",
+        "description": "Butun majmuada bepul tez internet"
+      },
+      "retail": {
+        "title": "Savdo nuqtalari",
+        "description": "Majmuada qulay savdo va xizmatlar"
+      },
+      "community": {
+        "title": "Jamiyat zali",
+        "description": "Tadbirlar va uchrashuvlar uchun ko'p maqsadli zal"
+      }
+    }
   },
   "location": {
-    "title": "Mukammal joylashuv",
-    "subtitle": "Toshkentning markaziy qismida strategik joylashgan",
+    "title": "Mukammal joylashuv va aloqa",
+    "subtitle": "Shaharning asosiy joylariga tengsiz kirish imkoniyati bilan markazda strategik joylashgan",
     "connectivity": "Ulanish",
     "landmarks": "Asosiy joylar",
     "transport": "Transport aloqasi",
     "minutes": "daqiqa",
     "km": "km",
+    "mapAlt": "Veranda Residences joylashuv xaritasi",
+    "address": "Mirzo Ulug'bek tumani, Yangi O'zbekiston ko'chasi",
+    "minutesAway": "Hamma narsadan daqiqalar",
+    "viewMap": "Interaktiv xaritani ko'rish",
+    "transportationAccess": "Oson transport kirishi",
+    "transportOptions": {
+      "byCar": "Avtomobil bilan",
+      "byCarDesc": "Markaz va asosiy avtomagistrallarga oson kirish",
+      "metroStation": "Metro bekat",
+      "metroStationDesc": "Metro bekatigacha 5 daqiqa yurish",
+      "publicTransport": "Jamoat transporti",
+      "publicTransportDesc": "Ko'plab avtobus yo'llari va taksi xizmatlari mavjud"
+    },
+    "landmarks": {
+      "airport": "Toshkent xalqaro aeroporti",
+      "megaPlanet": "Mega Planet savdo markazi",
+      "cityCenter": "Toshkent shahar markazi",
+      "comprador": "Comprador savdo markazi",
+      "businessDistrict": "Biznes tumani",
+      "university": "Toshkent davlat universiteti"
+    },
     "places": {
       "airport": "Havo porti",
       "metro": "Metro bekat",
@@ -119,7 +182,7 @@
   "footer": {
     "description": "O'zbekistondagi premium turar joy majmualarida ishonchli hamkoringiz",
     "quickLinks": "Tezkor havolalar",
-    "services": "Bizning xizmatlar",
+    "servicesTitle": "Bizning xizmatlar",
     "stayConnected": "Aloqada qoling",
     "newsletter": "So'nggi yangiliklar va maxsus takliflar uchun bizning axborot byulletenimizga obuna bo'ling",
     "subscribe": "Obuna bo'lish",

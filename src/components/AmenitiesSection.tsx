@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { useTranslation } from "react-i18next";
 import { 
   Waves, 
   Dumbbell, 
@@ -17,68 +18,59 @@ import poolImage from "@/assets/amenity-pool.jpg";
 import gymImage from "@/assets/amenity-gym.jpg";
 
 const AmenitiesSection = () => {
+  const { t } = useTranslation();
   const amenities = [
     {
       icon: Waves,
-      title: "Resort-Style Pool",
-      description: "Temperature-controlled infinity pool with poolside service",
+      title: t("amenities.items.pool.title"),
+      description: t("amenities.items.pool.description"),
       image: poolImage
     },
     {
       icon: Dumbbell,
-      title: "State-of-Art Gym",
-      description: "24/7 fitness center with premium equipment and personal trainers",
+      title: t("amenities.items.gym.title"),
+      description: t("amenities.items.gym.description"),
       image: gymImage
     },
     {
       icon: Heart,
-      title: "Wellness Spa",
-      description: "Full-service spa with massage rooms and relaxation areas"
+      title: t("amenities.items.spa.title"),
+      description: t("amenities.items.spa.description")
     },
     {
       icon: Baby,
-      title: "Kids Play Area",
-      description: "Safe and supervised children's playground and activity zone"
+      title: t("amenities.items.kidsArea.title"),
+      description: t("amenities.items.kidsArea.description")
     },
     {
       icon: Trees,
-      title: "Landscaped Gardens",
-      description: "Beautifully maintained gardens with walking paths"
+      title: t("amenities.items.gardens.title"),
+      description: t("amenities.items.gardens.description")
     },
     {
       icon: Car,
-      title: "Valet Parking",
-      description: "Covered parking with valet service for residents"
-    },
-    {
-      icon: Shield,
-      title: "24/7 Security",
-      description: "Round-the-clock security with CCTV monitoring"
-    },
-    {
-      icon: Utensils,
-      title: "Fine Dining",
-      description: "On-site restaurant with world-class cuisine"
+      title: t("amenities.items.parking.title"),
+      description: t("amenities.items.parking.description")
     },
     {
       icon: Gamepad2,
-      title: "Gaming Lounge",
-      description: "Modern gaming and entertainment center"
+      title: t("amenities.items.gaming.title"),
+      description: t("amenities.items.gaming.description")
     },
     {
       icon: Wifi,
-      title: "High-Speed WiFi",
-      description: "Complimentary high-speed internet throughout"
+      title: t("amenities.items.wifi.title"),
+      description: t("amenities.items.wifi.description")
     },
     {
       icon: ShoppingBag,
-      title: "Retail Outlets",
-      description: "Convenient shopping and services within the complex"
+      title: t("amenities.items.retail.title"),
+      description: t("amenities.items.retail.description")
     },
     {
       icon: Users,
-      title: "Community Hall",
-      description: "Multipurpose hall for events and gatherings"
+      title: t("amenities.items.community.title"),
+      description: t("amenities.items.community.description")
     }
   ];
 

@@ -106,7 +106,7 @@ const Footer = () => {
 
           {/* Services */}
           <div className="space-y-6">
-            <h4 className="text-xl font-bold">{t("footer.services")}</h4>
+            <h4 className="text-xl font-bold">{t("footer.servicesTitle")}</h4>
             <ul className="space-y-3 text-white/80">
               {services.map((service, index) => (
                 <li key={index}>• {service}</li>

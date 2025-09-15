@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
 import { 
   MapPin, 
   Clock, 
@@ -13,41 +14,42 @@ import {
 import locationMap from "@/assets/location-map.jpg";
 
 const LocationSection = () => {
+  const { t } = useTranslation();
   const landmarks = [
     {
       icon: Plane,
-      name: "Dubai International Airport",
-      time: "10 minutes",
+      name: t("location.landmarks.airport"),
+      time: "25 " + t("location.minutes"),
       color: "text-blue-500"
     },
     {
       icon: ShoppingBag,
-      name: "Dubai Mall",
-      time: "15 minutes",
+      name: t("location.landmarks.megaPlanet"),
+      time: "10 " + t("location.minutes"),
       color: "text-purple-500"
     },
     {
       icon: Building,
-      name: "Downtown Dubai",
-      time: "12 minutes",
+      name: t("location.landmarks.cityCenter"),
+      time: "15 " + t("location.minutes"),
       color: "text-green-500"
     },
     {
       icon: ShoppingBag,
-      name: "Mall of the Emirates",
-      time: "20 minutes",
+      name: t("location.landmarks.comprador"),
+      time: "8 " + t("location.minutes"),
       color: "text-red-500"
     },
     {
       icon: Building,
-      name: "Business Bay",
-      time: "8 minutes",
+      name: t("location.landmarks.businessDistrict"),
+      time: "12 " + t("location.minutes"),
       color: "text-yellow-500"
     },
     {
       icon: GraduationCap,
-      name: "Dubai International Financial Centre",
-      time: "15 minutes",
+      name: t("location.landmarks.university"),
+      time: "5 " + t("location.minutes"),
       color: "text-indigo-500"
     }
   ];
@@ -55,18 +57,18 @@ const LocationSection = () => {
   const transportOptions = [
     {
       icon: Car,
-      title: "By Car",
-      description: "Easy access to Sheikh Zayed Road and major highways"
+      title: t("location.transportOptions.byCar"),
+      description: t("location.transportOptions.byCarDesc")
     },
     {
       icon: Train,
-      title: "Metro Station",
-      description: "5 minutes walk to Dubai Marina Metro Station"
+      title: t("location.transportOptions.metroStation"),
+      description: t("location.transportOptions.metroStationDesc")
     },
     {
       icon: MapPin,
-      title: "Public Transport",
-      description: "Multiple bus routes and taxi services available"
+      title: t("location.transportOptions.publicTransport"),
+      description: t("location.transportOptions.publicTransportDesc")
     }
   ];
 
@@ -76,10 +78,10 @@ const LocationSection = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-display font-bold text-foreground mb-4">
-            Prime Location & Connectivity
+            {t("location.title")}
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Strategically located in Dubai Marina with unparalleled access to the city's key destinations
+            {t("location.subtitle")}
           </p>
         </div>
 
@@ -89,14 +91,14 @@ const LocationSection = () => {
             <div className="rounded-2xl overflow-hidden shadow-luxury">
               <img
             src={locationMap}
-            alt="Veranda Residences Location Map"
+            alt={t("location.mapAlt")}
                 className="w-full h-96 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
               <div className="absolute bottom-6 left-6">
                 <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-md rounded-full px-4 py-2">
                   <MapPin className="w-5 h-5 text-primary" />
-                  <span className="text-white font-medium">Dubai Marina</span>
+                  <span className="text-white font-medium">{t("location.address")}</span>
                 </div>
               </div>
             </div>
@@ -106,7 +108,7 @@ const LocationSection = () => {
           <div className="space-y-8">
             <div>
               <h3 className="text-heading font-bold text-foreground mb-6">
-                Minutes Away From Everything
+                {t("location.minutesAway")}
               </h3>
               <div className="space-y-4">
                 {landmarks.map((landmark) => {
@@ -130,7 +132,7 @@ const LocationSection = () => {
             </div>
 
             <Button variant="luxury" size="lg" className="w-full">
-              View Interactive Map
+              {t("location.viewMap")}
             </Button>
           </div>
         </div>
@@ -138,7 +140,7 @@ const LocationSection = () => {
         {/* Transport Options */}
         <div className="mt-16">
           <h3 className="text-heading font-bold text-foreground text-center mb-8">
-            Easy Transportation Access
+            {t("location.transportationAccess")}
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {transportOptions.map((option) => {
@@ -157,36 +159,7 @@ const LocationSection = () => {
             })}
           </div>
         </div>
-
-        {/* Neighborhood Highlights */}
-        <div className="mt-16 bg-white rounded-2xl shadow-luxury p-8">
-          <h3 className="text-heading font-bold text-foreground text-center mb-8">
-            Dubai Marina Lifestyle
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-2">200+</div>
-              <p className="font-semibold text-foreground mb-1">Restaurants</p>
-              <p className="text-muted-foreground text-sm">World-class dining</p>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-2">50+</div>
-              <p className="font-semibold text-foreground mb-1">Retail Outlets</p>
-              <p className="text-muted-foreground text-sm">Shopping destinations</p>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-2">3km</div>
-              <p className="font-semibold text-foreground mb-1">Marina Walk</p>
-              <p className="text-muted-foreground text-sm">Waterfront promenade</p>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-2">24/7</div>
-              <p className="font-semibold text-foreground mb-1">Vibrant Life</p>
-              <p className="text-muted-foreground text-sm">Always active</p>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
   );
 };
