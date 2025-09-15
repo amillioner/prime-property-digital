@@ -3,10 +3,12 @@ import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone } from "lucide-react";
 import LanguageSwitcher from "./LanguageSwitcher";
+import EnquiryPopup from "./EnquiryPopup";
 
 const Navigation = () => {
   const { t } = useTranslation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isEnquiryOpen, setIsEnquiryOpen] = useState(false);
 
   const navItems = [
     { label: t("navigation.home"), href: "#home" },
@@ -59,7 +61,7 @@ const Navigation = () => {
               <Phone className="w-4 h-4" />
               {t("contact.info.callNow")}
             </Button>
-            <Button variant="luxury" size="sm">
+            <Button variant="luxury" size="sm" onClick={() => setIsEnquiryOpen(true)}>
               {t("hero.enquireNow")}
             </Button>
           </div>
@@ -96,7 +98,7 @@ const Navigation = () => {
                   <Phone className="w-4 h-4" />
                   {t("contact.info.callNow")}
                 </Button>
-                <Button variant="luxury" size="sm" className="w-full">
+                <Button variant="luxury" size="sm" className="w-full" onClick={() => setIsEnquiryOpen(true)}>
                   {t("hero.enquireNow")}
                 </Button>
               </div>
@@ -104,6 +106,8 @@ const Navigation = () => {
           </div>
         )}
       </div>
+      
+      <EnquiryPopup isOpen={isEnquiryOpen} onClose={() => setIsEnquiryOpen(false)} />
     </nav>
   );
 };
