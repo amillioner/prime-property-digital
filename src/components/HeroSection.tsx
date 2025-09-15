@@ -4,22 +4,28 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, MapPin, Star } from "lucide-react";
 import ImageCarousel from "./ImageCarousel";
 import EnquiryPopup from "./EnquiryPopup";
-import heroImage from "@/assets/hero-veranda.jpg";
-import facade1 from "@/assets/facade-1.webp";
-import facade2 from "@/assets/facade-2.webp";
-import facade3 from "@/assets/facade-3.webp";
-import verandaMain from "@/assets/veranda-main.webp";
+import veranda1 from "@/assets/veranda1.jpg";
+import veranda2 from "@/assets/veranda2.jpg";
+import veranda3 from "@/assets/veranda3.jpg";
+import veranda4 from "@/assets/veranda4.jpg";
+import veranda5 from "@/assets/veranda5.jpg";
+import veranda6 from "@/assets/veranda6.jpg";
+import veranda7 from "@/assets/veranda7.jpg";
+import veranda8 from "@/assets/veranda8.jpg";
 
 const HeroSection = () => {
   const { t } = useTranslation();
   const [isEnquiryOpen, setIsEnquiryOpen] = useState(false);
   
   const carouselImages = [
-    verandaMain,
-    heroImage,
-    facade1,
-    facade2,
-    facade3
+    veranda1,
+    veranda2,
+    veranda3,
+    veranda4,
+    veranda5,
+    veranda6,
+    veranda7,
+    veranda8
   ];
   
   return (
