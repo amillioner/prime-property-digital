@@ -71,7 +71,7 @@ const HeroSection = () => {
           <div className="flex items-center space-x-2 mb-8 animate-slide-in-right">
             <MapPin className="w-5 h-5 text-primary" />
             <span className="text-white/90 text-lg drop-shadow-md">
-              Mirzo Ulugbek, Tashkent • Premium Location
+              {t("hero.location")}
             </span>
           </div>
 

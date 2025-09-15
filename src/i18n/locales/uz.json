@@ -10,10 +10,14 @@
     "title": "Veranda Residences",
     "subtitle": "Toshkentdagi zamonaviy turmush tarzining yangi standardi",
     "description": "Mirzo Ulug'bek tumanidagi mukammal joylashuvda hashamatli hayot uchun mo'ljallangan premium-klass turar-joy majmuasi",
+    "location": "Mirzo Ulug'bek, Toshkent • Premium joylashuv",
     "enquireNow": "Hoziroq so'rov",
     "viewGallery": "Galereyani ko'rish",
     "exclusiveOffer": "Maxsus taklif",
     "limitedTime": "Cheklangan vaqt"
+  },
+  "common": {
+    "address": "Mirzo Ulug'bek, Toshkent, O'zbekiston"
   },
   "pricing": {
     "title": "Narx va reja",

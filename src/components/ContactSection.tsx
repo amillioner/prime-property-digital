@@ -52,7 +52,7 @@ const ContactSection = () => {
     {
       icon: MapPin,
       title: t("contact.info.visit"),
-      info: "Mirzo Ulugbek, Tashkent, Uzbekistan",
+      info: t("common.address"),
       action: t("contact.info.getDirections")
     },
     {
