@@ -1,0 +1,127 @@
+{
+  "navigation": {
+    "home": "Bosh sahifa",
+    "pricing": "Narxlar",
+    "amenities": "Qulayliklar",
+    "location": "Joylashuv",
+    "contact": "Aloqa"
+  },
+  "hero": {
+    "title": "Veranda Residences",
+    "subtitle": "Toshkentdagi zamonaviy turmush tarzining yangi standardi",
+    "description": "Mirzo Ulug'bek tumanidagi mukammal joylashuvda hashamatli hayot uchun mo'ljallangan premium-klass turar-joy majmuasi",
+    "enquireNow": "Hoziroq so'rov",
+    "viewGallery": "Galereyani ko'rish",
+    "exclusiveOffer": "Maxsus taklif",
+    "limitedTime": "Cheklangan vaqt"
+  },
+  "pricing": {
+    "title": "Narx va reja",
+    "subtitle": "Turli ehtiyojlar uchun moslashtirilgan turar-joy variantlari",
+    "startingFrom": "dan boshlab",
+    "perMonth": "/oyiga",
+    "bedroom": "xonali",
+    "sqm": "kv.m",
+    "book": "Bron qilish",
+    "learnMore": "Batafsil",
+    "paymentPlan": "To'lov rejasi",
+    "downPayment": "Dastlabki to'lov",
+    "installments": "Bo'lib to'lov",
+    "handover": "Topshirish",
+    "features": {
+      "premium": "Premium jihoz",
+      "parking": "Shaxsiy avtoturargoh",
+      "view": "Shahar manzarasi",
+      "balcony": "Keng balkon",
+      "storage": "Qo'shimcha xotira"
+    }
+  },
+  "amenities": {
+    "title": "Premium qulayliklar",
+    "subtitle": "Hayot sifatini oshiruvchi zamonaviy imkoniyatlar",
+    "wellness": "Salomatlik markazi",
+    "pool": "Infinity hovuz",
+    "gym": "Zamonaviy fitnes",
+    "garden": "Yashil bog'",
+    "security": "24/7 xavfsizlik",
+    "concierge": "Konsyerj xizmati",
+    "kids": "Bolalar maydonchasi",
+    "business": "Biznes markaz"
+  },
+  "location": {
+    "title": "Mukammal joylashuv",
+    "subtitle": "Toshkentning markaziy qismida strategik joylashgan",
+    "connectivity": "Ulanish",
+    "landmarks": "Asosiy joylar",
+    "transport": "Transport aloqasi",
+    "minutes": "daqiqa",
+    "km": "km",
+    "places": {
+      "airport": "Havo porti",
+      "metro": "Metro bekat",
+      "mall": "Savdo markazi",
+      "school": "Maktab",
+      "hospital": "Shifoxona",
+      "park": "Park"
+    }
+  },
+  "contact": {
+    "title": "Biz bilan bog'laning",
+    "subtitle": "Veranda Residences-ni yangi uyingiz qilishga tayyormisiz? Bugun mutaxassis jamoamiz bilan bog'laning",
+    "form": {
+      "title": "Ma'lumot so'rash",
+      "subtitle": "Shaklni to'ldiring va biz 24 soat ichida sizga javob beramiz",
+      "firstName": "Ism",
+      "lastName": "Familiya",
+      "email": "Email manzil",
+      "phone": "Telefon raqam",
+      "interest": "Qiziqish",
+      "budget": "Byudjet",
+      "message": "Xabar",
+      "submit": "So'rov yuborish",
+      "submitting": "Yuborilmoqda...",
+      "required": "Majburiy"
+    },
+    "info": {
+      "call": "Qo'ng'iroq qiling",
+      "email": "Email yuboring",
+      "visit": "Tashrif buyuring",
+      "hours": "Ish vaqti",
+      "callNow": "Hozir qo'ng'iroq",
+      "sendEmail": "Email yuborish",
+      "getDirections": "Yo'nalish olish",
+      "scheduleVisit": "Tashrif rejalashtirish",
+      "officeHours": "Dush - Shan: 9:00 - 18:00"
+    },
+    "quickActions": {
+      "title": "Tezkor harakatlar",
+      "brochure": "Broşyurani yuklab olish",
+      "brochureDesc": "Veranda Residences haqida batafsil ma'lumot oling",
+      "visit": "Sayt tashrifini rejalashtirish",
+      "visitDesc": "Namuna xonamiznining shaxsiy turini bron qiling",
+      "chat": "Jonli chat",
+      "chatDesc": "Bizning sotuv mutaxassislarimiz bilan darhol suhbatlashing",
+      "download": "PDF yuklab olish",
+      "bookVisit": "Tashrif bron qilish",
+      "startChat": "Chatni boshlash"
+    },
+    "callback": {
+      "title": "Tezkor qayta qo'ng'iroq",
+      "description": "Zudlik bilan yordam kerakmi? Qayta qo'ng'iroq so'rang va biz 30 daqiqa ichida siz bilan bog'lanamiz",
+      "request": "Qayta qo'ng'iroq so'rash"
+    },
+    "success": {
+      "title": "So'rov yuborildi!",
+      "description": "Qiziqishingiz uchun rahmat. Bizning jamoamiz 24 soat ichida siz bilan bog'lanadi."
+    }
+  },
+  "footer": {
+    "description": "O'zbekistondagi premium turar-joy komplekslari uchun ishonchli hamkor",
+    "quickLinks": "Tezkor havolalar",
+    "contactInfo": "Aloqa ma'lumotlari",
+    "followUs": "Bizni kuzatib boring",
+    "rights": "Barcha huquqlar himoyalangan",
+    "privacy": "Maxfiylik siyosati",
+    "terms": "Foydalanish shartlari"
+  }
+}

@@ -1,9 +1,12 @@
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone } from "lucide-react";
 import { cn } from "@/lib/utils";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Navigation = () => {
+  const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -17,14 +20,11 @@ const Navigation = () => {
   }, []);
 
   const navItems = [
-    { label: "Home", href: "#home" },
-    { label: "Pricing", href: "#pricing" },
-    { label: "Site Plan", href: "#site-plan" },
-    { label: "Amenities", href: "#amenities" },
-    { label: "Gallery", href: "#gallery" },
-    { label: "Location", href: "#location" },
-    { label: "Floor Plans", href: "#floor-plans" },
-    { label: "Contact", href: "#contact" },
+    { label: t("navigation.home"), href: "#home" },
+    { label: t("navigation.pricing"), href: "#pricing" },
+    { label: t("navigation.amenities"), href: "#amenities" },
+    { label: t("navigation.location"), href: "#location" },
+    { label: t("navigation.contact"), href: "#contact" },
   ];
 
   const scrollToSection = (href: string) => {
@@ -49,10 +49,10 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <div className="w-10 h-10 bg-gradient-gold rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">W</span>
+              <span className="text-white font-bold text-xl">V</span>
             </div>
             <div>
-              <h2 className="font-bold text-xl text-foreground">Windsor</h2>
+              <h2 className="font-bold text-xl text-foreground">Veranda</h2>
               <p className="text-xs text-muted-foreground -mt-1">RESIDENCES</p>
             </div>
           </div>
@@ -72,12 +72,13 @@ const Navigation = () => {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center space-x-4">
+            <LanguageSwitcher />
             <Button variant="premium" size="sm">
               <Phone className="w-4 h-4" />
-              Call Now
+              {t("contact.info.callNow")}
             </Button>
             <Button variant="luxury" size="sm">
-              Enquire Now
+              {t("hero.enquireNow")}
             </Button>
           </div>
 
@@ -108,12 +109,13 @@ const Navigation = () => {
                 </button>
               ))}
               <div className="pt-4 space-y-3">
+                <LanguageSwitcher />
                 <Button variant="premium" size="sm" className="w-full">
                   <Phone className="w-4 h-4" />
-                  Call Now
+                  {t("contact.info.callNow")}
                 </Button>
                 <Button variant="luxury" size="sm" className="w-full">
-                  Enquire Now
+                  {t("hero.enquireNow")}
                 </Button>
               </div>
             </div>

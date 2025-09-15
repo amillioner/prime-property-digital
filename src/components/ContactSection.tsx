@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -17,6 +18,7 @@ import {
 } from "lucide-react";
 
 const ContactSection = () => {
+  const { t } = useTranslation();
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -28,8 +30,8 @@ const ContactSection = () => {
     setTimeout(() => {
       setIsSubmitting(false);
       toast({
-        title: "Enquiry Submitted!",
-        description: "Thank you for your interest. Our team will contact you within 24 hours.",
+        title: t("contact.success.title"),
+        description: t("contact.success.description"),
       });
     }, 2000);
   };
@@ -37,48 +39,48 @@ const ContactSection = () => {
   const contactInfo = [
     {
       icon: Phone,
-      title: "Call Us",
-      info: "+971 4 123 4567",
-      action: "Call Now"
+      title: t("contact.info.call"),
+      info: "+998712301331",
+      action: t("contact.info.callNow")
     },
     {
       icon: Mail,
-      title: "Email Us",
-      info: "info@windsorresidences.ae",
-      action: "Send Email"
+      title: t("contact.info.email"),
+      info: "info@verandaresidences.uz",
+      action: t("contact.info.sendEmail")
     },
     {
       icon: MapPin,
-      title: "Visit Us",
-      info: "Dubai Marina, Dubai, UAE",
-      action: "Get Directions"
+      title: t("contact.info.visit"),
+      info: "Mirzo Ulugbek, Tashkent, Uzbekistan",
+      action: t("contact.info.getDirections")
     },
     {
       icon: Clock,
-      title: "Office Hours",
-      info: "Mon - Sat: 9AM - 6PM",
-      action: "Schedule Visit"
+      title: t("contact.info.hours"),
+      info: t("contact.info.officeHours"),
+      action: t("contact.info.scheduleVisit")
     }
   ];
 
   const quickActions = [
     {
       icon: Download,
-      title: "Download Brochure",
-      description: "Get detailed information about Windsor Residences",
-      action: "Download PDF"
+      title: t("contact.quickActions.brochure"),
+      description: t("contact.quickActions.brochureDesc"),
+      action: t("contact.quickActions.download")
     },
     {
       icon: Calendar,
-      title: "Schedule Site Visit",
-      description: "Book a personal tour of our show apartment",
-      action: "Book Visit"
+      title: t("contact.quickActions.visit"),
+      description: t("contact.quickActions.visitDesc"),
+      action: t("contact.quickActions.bookVisit")
     },
     {
       icon: MessageSquare,
-      title: "Live Chat",
-      description: "Chat with our sales experts instantly",
-      action: "Start Chat"
+      title: t("contact.quickActions.chat"),
+      description: t("contact.quickActions.chatDesc"),
+      action: t("contact.quickActions.startChat")
     }
   ];
 
@@ -88,10 +90,10 @@ const ContactSection = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-display font-bold text-foreground mb-4">
-            Get In Touch
+            {t("contact.title")}
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Ready to make Windsor Residences your new home? Contact our expert team today
+            {t("contact.subtitle")}
           </p>
         </div>
 
@@ -100,10 +102,10 @@ const ContactSection = () => {
           <Card className="shadow-luxury">
             <CardHeader>
               <CardTitle className="text-2xl font-bold text-foreground">
-                Request Information
+                {t("contact.form.title")}
               </CardTitle>
               <p className="text-muted-foreground">
-                Fill out the form and we'll get back to you within 24 hours
+                {t("contact.form.subtitle")}
               </p>
             </CardHeader>
             <CardContent>
@@ -175,7 +177,7 @@ const ContactSection = () => {
                   className="w-full"
                   disabled={isSubmitting}
                 >
-                  {isSubmitting ? "Submitting..." : "Send Enquiry"}
+                  {isSubmitting ? t("contact.form.submitting") : t("contact.form.submit")}
                 </Button>
               </form>
             </CardContent>
@@ -238,12 +240,12 @@ const ContactSection = () => {
             <Card className="bg-gradient-gold text-white p-6">
               <div className="text-center">
                 <Phone className="w-8 h-8 mx-auto mb-3" />
-                <h3 className="text-xl font-bold mb-2">Instant Call Back</h3>
+                <h3 className="text-xl font-bold mb-2">{t("contact.callback.title")}</h3>
                 <p className="mb-4 text-white/90">
-                  Need immediate assistance? Request a call back and we'll contact you within 30 minutes
+                  {t("contact.callback.description")}
                 </p>
                 <Button variant="premium" className="border-white text-white hover:bg-white hover:text-primary">
-                  Request Call Back
+                  {t("contact.callback.request")}
                 </Button>
               </div>
             </Card>

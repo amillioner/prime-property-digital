@@ -1,52 +1,54 @@
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check, Crown, Home, Building } from "lucide-react";
 
 const PricingSection = () => {
+  const { t } = useTranslation();
   const pricingTiers = [
     {
       icon: Home,
-      title: "1 Bedroom",
-      subtitle: "Premium Apartments",
-      price: "AED 1.2M",
-      size: "650 - 750 sq ft",
+      title: `1 ${t("pricing.bedroom")}`,
+      subtitle: t("pricing.features.premium"),
+      price: "$180,000",
+      size: "65 - 75 " + t("pricing.sqm"),
       features: [
-        "Prime Marina Views",
+        t("pricing.features.view"),
+        t("pricing.features.premium"),
+        t("pricing.features.balcony"),
+        t("pricing.features.storage"),
         "Modern Kitchen",
-        "Premium Finishes",
-        "Balcony Access",
-        "Built-in Wardrobes",
         "24/7 Concierge"
       ],
       popular: false
     },
     {
       icon: Building,
-      title: "2 Bedroom",
-      subtitle: "Family Residences",
-      price: "AED 1.8M",
-      size: "1,050 - 1,200 sq ft",
+      title: `2 ${t("pricing.bedroom")}`,
+      subtitle: t("pricing.features.premium"),
+      price: "$280,000",
+      size: "105 - 120 " + t("pricing.sqm"),
       features: [
-        "Panoramic City Views",
+        t("pricing.features.view"),
+        t("pricing.features.parking"),
+        t("pricing.features.balcony"),
+        t("pricing.features.storage"),
         "Master Suite",
         "Guest Bathroom",
-        "Spacious Living Area",
         "Premium Kitchen Island",
-        "Dual Balconies",
-        "Walk-in Closet",
-        "Premium Amenities Access"
+        "Dual Balconies"
       ],
       popular: true
     },
     {
       icon: Crown,
-      title: "3 Bedroom",
+      title: `3 ${t("pricing.bedroom")}`,
       subtitle: "Luxury Penthouses",
-      price: "AED 2.8M",
-      size: "1,450 - 1,650 sq ft",
+      price: "$450,000",
+      size: "145 - 165 " + t("pricing.sqm"),
       features: [
-        "Exclusive Penthouse Views",
-        "3 Master Suites",
+        "Penthouse Views",
+        t("pricing.features.parking"),
         "Maid's Room",
         "Private Elevator Access",
         "Premium Italian Kitchen",
@@ -64,10 +66,10 @@ const PricingSection = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-display font-bold text-foreground mb-4">
-            Investment Opportunities
+            {t("pricing.title")}
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Choose from our selection of premium apartments designed for modern luxury living
+            {t("pricing.subtitle")}
           </p>
         </div>
 
@@ -86,9 +88,9 @@ const PricingSection = () => {
               >
                 {tier.popular && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <div className="bg-gradient-gold text-white px-4 py-2 rounded-full text-sm font-bold">
-                      Most Popular
-                    </div>
+                  <div className="bg-gradient-gold text-white px-4 py-2 rounded-full text-sm font-bold">
+                    {t("pricing.features.popular")}
+                  </div>
                   </div>
                 )}
 
@@ -127,7 +129,7 @@ const PricingSection = () => {
                     className="w-full"
                     size="lg"
                   >
-                    Request Details
+                    {t("pricing.learnMore")}
                   </Button>
                 </CardContent>
               </Card>
@@ -139,10 +141,10 @@ const PricingSection = () => {
         <div className="mt-16 bg-white rounded-2xl shadow-luxury p-8">
           <div className="text-center mb-8">
             <h3 className="text-heading font-bold text-foreground mb-4">
-              Flexible Payment Plans
+              {t("pricing.paymentPlan")}
             </h3>
             <p className="text-muted-foreground">
-              Easy payment options designed to make your dream home accessible
+              {t("pricing.subtitle")}
             </p>
           </div>
 
@@ -151,21 +153,21 @@ const PricingSection = () => {
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-primary font-bold">10%</span>
               </div>
-              <h4 className="font-semibold text-foreground mb-2">Booking</h4>
+              <h4 className="font-semibold text-foreground mb-2">{t("pricing.downPayment")}</h4>
               <p className="text-sm text-muted-foreground">On reservation</p>
             </div>
             <div className="text-center">
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-primary font-bold">40%</span>
               </div>
-              <h4 className="font-semibold text-foreground mb-2">Construction</h4>
+              <h4 className="font-semibold text-foreground mb-2">{t("pricing.installments")}</h4>
               <p className="text-sm text-muted-foreground">During construction</p>
             </div>
             <div className="text-center">
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-primary font-bold">50%</span>
               </div>
-              <h4 className="font-semibold text-foreground mb-2">Completion</h4>
+              <h4 className="font-semibold text-foreground mb-2">{t("pricing.handover")}</h4>
               <p className="text-sm text-muted-foreground">On handover</p>
             </div>
             <div className="text-center">

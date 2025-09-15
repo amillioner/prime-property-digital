@@ -1,15 +1,17 @@
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, MapPin, Star } from "lucide-react";
-import heroImage from "@/assets/hero-building.jpg";
+import heroImage from "@/assets/hero-veranda.jpg";
 
 const HeroSection = () => {
+  const { t } = useTranslation();
   return (
     <section id="home" className="relative min-h-screen flex items-center">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
           src={heroImage}
-          alt="Windsor Residences Dubai - Luxury Apartments"
+          alt="Veranda Residences Tashkent - Luxury Apartments"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-hero" />
@@ -22,60 +24,64 @@ const HeroSection = () => {
           <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-4 py-2 mb-6 animate-fade-in-up">
             <Star className="w-4 h-4 text-primary fill-current" />
             <span className="text-white text-sm font-medium">
-              Award-Winning Luxury Development
+              {t("hero.exclusiveOffer")} - {t("hero.limitedTime")}
             </span>
           </div>
 
           {/* Main Heading */}
           <h1 className="text-hero font-bold text-white mb-6 animate-fade-in-up leading-tight">
-            Windsor
-            <span className="block text-primary-glow">Residences</span>
+            {t("hero.title")}
           </h1>
 
           {/* Tagline */}
           <p className="text-xl md:text-2xl text-white/90 mb-4 max-w-2xl animate-slide-in-right font-light">
-            Experience Unparalleled Luxury Living in the Heart of Dubai
+            {t("hero.subtitle")}
+          </p>
+
+          {/* Description */}
+          <p className="text-lg text-white/80 mb-6 max-w-2xl animate-slide-in-right">
+            {t("hero.description")}
           </p>
 
           {/* Location */}
           <div className="flex items-center space-x-2 mb-8 animate-slide-in-right">
             <MapPin className="w-5 h-5 text-primary" />
             <span className="text-white/80 text-lg">
-              Dubai Marina • Premium Location
+              Mirzo Ulugbek, Tashkent • Premium Location
             </span>
           </div>
 
           {/* Price Badge */}
           <div className="bg-gradient-gold rounded-lg p-4 mb-8 max-w-sm animate-scale-in">
-            <p className="text-white text-sm font-medium">Starting From</p>
-            <p className="text-white text-3xl font-bold">AED 1.2M</p>
-            <p className="text-white/80 text-sm">1-3 Bedroom Apartments</p>
+            <p className="text-white text-sm font-medium">{t("pricing.startingFrom")}</p>
+            <p className="text-white text-3xl font-bold">$180,000</p>
+            <p className="text-white/80 text-sm">1-3 {t("pricing.bedroom")} {t("contact.form.interest")}</p>
           </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up">
             <Button variant="hero" size="xl">
-              Enquire Now
+              {t("hero.enquireNow")}
               <ArrowRight className="w-5 h-5" />
             </Button>
             <Button variant="premium" size="xl" className="border-white text-white hover:bg-white hover:text-foreground">
-              Schedule Site Visit
+              {t("contact.quickActions.bookVisit")}
             </Button>
           </div>
 
           {/* Key Features */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12 animate-fade-in-up">
             <div className="text-center">
-              <p className="text-3xl font-bold text-primary mb-2">15 Min</p>
-              <p className="text-white/80">to Dubai Mall</p>
+              <p className="text-3xl font-bold text-primary mb-2">15 {t("location.minutes")}</p>
+              <p className="text-white/80">{t("location.places.airport")}</p>
             </div>
             <div className="text-center">
-              <p className="text-3xl font-bold text-primary mb-2">10 Min</p>
-              <p className="text-white/80">to Airport</p>
+              <p className="text-3xl font-bold text-primary mb-2">10 {t("location.minutes")}</p>
+              <p className="text-white/80">{t("location.places.metro")}</p>
             </div>
             <div className="text-center">
               <p className="text-3xl font-bold text-primary mb-2">50+</p>
-              <p className="text-white/80">Premium Amenities</p>
+              <p className="text-white/80">{t("amenities.title")}</p>
             </div>
           </div>
         </div>

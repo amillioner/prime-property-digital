@@ -1,0 +1,127 @@
+{
+  "navigation": {
+    "home": "Home",
+    "pricing": "Pricing",
+    "amenities": "Amenities",
+    "location": "Location",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Veranda Residences",
+    "subtitle": "The new standard of modern living in Tashkent",
+    "description": "A premium residential complex designed for luxurious living in the perfect location of Mirzo Ulugbek district",
+    "enquireNow": "Enquire Now",
+    "viewGallery": "View Gallery",
+    "exclusiveOffer": "Exclusive Offer",
+    "limitedTime": "Limited Time"
+  },
+  "pricing": {
+    "title": "Pricing & Plans",
+    "subtitle": "Housing options tailored to different needs",
+    "startingFrom": "Starting from",
+    "perMonth": "/month",
+    "bedroom": "Bedroom",
+    "sqm": "sqm",
+    "book": "Book Now",
+    "learnMore": "Learn More",
+    "paymentPlan": "Payment Plan",
+    "downPayment": "Down Payment",
+    "installments": "Installments",
+    "handover": "Handover",
+    "features": {
+      "premium": "Premium Finishes",
+      "parking": "Private Parking",
+      "view": "City Views",
+      "balcony": "Spacious Balcony",
+      "storage": "Storage Room"
+    }
+  },
+  "amenities": {
+    "title": "Premium Amenities",
+    "subtitle": "Modern facilities to enhance your quality of life",
+    "wellness": "Wellness Center",
+    "pool": "Infinity Pool",
+    "gym": "Modern Fitness",
+    "garden": "Green Garden",
+    "security": "24/7 Security",
+    "concierge": "Concierge Service",
+    "kids": "Kids Playground",
+    "business": "Business Center"
+  },
+  "location": {
+    "title": "Perfect Location",
+    "subtitle": "Strategically located in central Tashkent",
+    "connectivity": "Connectivity",
+    "landmarks": "Key Landmarks",
+    "transport": "Transport Links",
+    "minutes": "minutes",
+    "km": "km",
+    "places": {
+      "airport": "Airport",
+      "metro": "Metro Station",
+      "mall": "Shopping Mall",
+      "school": "School", 
+      "hospital": "Hospital",
+      "park": "Park"
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Ready to make Veranda Residences your new home? Contact our expert team today",
+    "form": {
+      "title": "Request Information",
+      "subtitle": "Fill out the form and we'll get back to you within 24 hours",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "interest": "Property Interest",
+      "budget": "Budget Range",
+      "message": "Message",
+      "submit": "Send Enquiry",
+      "submitting": "Submitting...",
+      "required": "Required"
+    },
+    "info": {
+      "call": "Call Us",
+      "email": "Email Us",
+      "visit": "Visit Us",
+      "hours": "Office Hours",
+      "callNow": "Call Now",
+      "sendEmail": "Send Email",
+      "getDirections": "Get Directions",
+      "scheduleVisit": "Schedule Visit",
+      "officeHours": "Mon - Sat: 9AM - 6PM"
+    },
+    "quickActions": {
+      "title": "Quick Actions",
+      "brochure": "Download Brochure",
+      "brochureDesc": "Get detailed information about Veranda Residences",
+      "visit": "Schedule Site Visit",
+      "visitDesc": "Book a personal tour of our show apartment",
+      "chat": "Live Chat",
+      "chatDesc": "Chat with our sales experts instantly",
+      "download": "Download PDF",
+      "bookVisit": "Book Visit",
+      "startChat": "Start Chat"
+    },
+    "callback": {
+      "title": "Instant Call Back",
+      "description": "Need immediate assistance? Request a call back and we'll contact you within 30 minutes",
+      "request": "Request Call Back"
+    },
+    "success": {
+      "title": "Enquiry Submitted!",
+      "description": "Thank you for your interest. Our team will contact you within 24 hours."
+    }
+  },
+  "footer": {
+    "description": "Your trusted partner for premium residential complexes in Uzbekistan",
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Information",
+    "followUs": "Follow Us",
+    "rights": "All rights reserved",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}

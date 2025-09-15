@@ -88,8 +88,8 @@ const LocationSection = () => {
           <div className="relative">
             <div className="rounded-2xl overflow-hidden shadow-luxury">
               <img
-                src={locationMap}
-                alt="Windsor Residences Location Map"
+            src={locationMap}
+            alt="Veranda Residences Location Map"
                 className="w-full h-96 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
