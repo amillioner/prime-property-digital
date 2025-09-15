@@ -80,10 +80,10 @@ const AmenitiesSection = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-display font-bold text-foreground mb-4">
-            World-Class Amenities
+            {t("amenities.title")}
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Experience luxury living with over 50 premium amenities designed for your comfort and lifestyle
+            {t("amenities.subtitle")}
           </p>
         </div>
 
@@ -129,27 +129,6 @@ const AmenitiesSection = () => {
               </Card>
             );
           })}
-        </div>
-
-        {/* Lifestyle Features */}
-        <div className="mt-16 bg-white rounded-2xl shadow-luxury p-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">50+</div>
-              <h4 className="font-semibold text-foreground mb-2">Premium Amenities</h4>
-              <p className="text-muted-foreground text-sm">Everything you need for luxury living</p>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">24/7</div>
-              <h4 className="font-semibold text-foreground mb-2">Concierge Service</h4>
-              <p className="text-muted-foreground text-sm">Round-the-clock assistance</p>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">100%</div>
-              <h4 className="font-semibold text-foreground mb-2">Satisfaction</h4>
-              <p className="text-muted-foreground text-sm">Guaranteed luxury experience</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
