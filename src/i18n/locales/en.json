@@ -213,8 +213,7 @@
       "name": "Name",
       "mobileNumber": "Mobile Number",
       "email": "Email",
-      "submit": "Submit",
-      "consent": "I Consent to The Processing of Provided Data According To Privacy Policy | Terms & Conditions. I Authorize Nova Capital Real Estate and its representatives to Call, SMS, Email or WhatsApp Me About Its Products and Offers. This Consent Overrides Any Registration For DNC/NDNC"
+      "submit": "Submit"
     },
     "getInfo": "GET INFORMATION ON AVAILABILITIES",
     "availableUnits": "Available Units",

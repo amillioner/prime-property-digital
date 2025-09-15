@@ -213,8 +213,7 @@
       "name": "Ism",
       "mobileNumber": "Mobil raqam",
       "email": "Elektron pochta",
-      "submit": "Jo'natish",
-      "consent": "Men taqdim etilgan ma'lumotlarni Maxfiylik siyosati | Shartlar va shartlarga muvofiq qayta ishlashga rozilik beraman. Men Nova Capital Real Estate va uning vakillariga o'z mahsulotlari va takliflari haqida qo'ng'iroq qilish, SMS, elektron pochta yoki WhatsApp orqali murojaat qilishga ruxsat beraman. Ushbu rozilik DNC/NDNC-ga har qanday ro'yxatga olishni bekor qiladi"
+      "submit": "Jo'natish"
     },
     "getInfo": "MAVJUDLIK HAQIDA MA'LUMOT OLING",
     "availableUnits": "Mavjud kvartiralar",

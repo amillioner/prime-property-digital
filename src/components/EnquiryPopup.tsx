@@ -168,19 +168,6 @@ const EnquiryPopup = ({ isOpen, onClose }: EnquiryPopupProps) => {
                     className="rounded-lg"
                   />
                 </div>
-
-                <div className="flex items-start space-x-3">
-                  <Checkbox
-                    id="consent"
-                    checked={formData.consent}
-                    onCheckedChange={(checked) => setFormData(prev => ({ ...prev, consent: !!checked }))}
-                    className="mt-1"
-                  />
-                  <Label htmlFor="consent" className="text-xs leading-relaxed text-muted-foreground">
-                    {t("enquiry.form.consent")}
-                  </Label>
-                </div>
-
                 <Button
                   type="submit"
                   variant="luxury"
