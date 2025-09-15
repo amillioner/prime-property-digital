@@ -10,7 +10,7 @@ const PricingSection = () => {
       icon: Home,
       title: `1 ${t("pricing.bedroom")}`,
       subtitle: t("pricing.features.premium"),
-      price: "$180,000",
+      price: "$71,500 - $82,500", // 65-75 sqm * $1100
       size: "65 - 75 " + t("pricing.sqm"),
       features: [
         t("pricing.features.view"),
@@ -26,7 +26,7 @@ const PricingSection = () => {
       icon: Building,
       title: `2 ${t("pricing.bedroom")}`,
       subtitle: t("pricing.features.premium"),
-      price: "$280,000",
+      price: "$115,500 - $132,000", // 105-120 sqm * $1100
       size: "105 - 120 " + t("pricing.sqm"),
       features: [
         t("pricing.features.view"),
@@ -44,7 +44,7 @@ const PricingSection = () => {
       icon: Crown,
       title: `3 ${t("pricing.bedroom")}`,
       subtitle: "Luxury Penthouses",
-      price: "$450,000",
+      price: "$159,500 - $181,500", // 145-165 sqm * $1100
       size: "145 - 165 " + t("pricing.sqm"),
       features: [
         "Penthouse Views",

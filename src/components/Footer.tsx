@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { 
   Facebook, 
@@ -11,20 +12,28 @@ import {
 } from "lucide-react";
 
 const Footer = () => {
+  const { t } = useTranslation();
+  
   const quickLinks = [
-    { label: "Home", href: "#home" },
-    { label: "Pricing", href: "#pricing" },
-    { label: "Amenities", href: "#amenities" },
-    { label: "Location", href: "#location" },
-    { label: "Gallery", href: "#gallery" },
-    { label: "Contact", href: "#contact" }
+    { label: t("navigation.home"), href: "#home" },
+    { label: t("navigation.pricing"), href: "#pricing" },
+    { label: t("navigation.amenities"), href: "#amenities" },
+    { label: t("navigation.location"), href: "#location" },
+    { label: t("navigation.contact"), href: "#contact" }
+  ];
+
+  const services = [
+    t("footer.services.sales"),
+    t("footer.services.consultation"),
+    t("footer.services.visits"),
+    t("footer.services.payment"),
+    t("footer.services.support"),
+    t("footer.services.management")
   ];
 
   const legalLinks = [
-    { label: "Privacy Policy", href: "#" },
-    { label: "Terms of Service", href: "#" },
-    { label: "Cookie Policy", href: "#" },
-    { label: "Disclaimer", href: "#" }
+    { label: t("footer.privacy"), href: "#" },
+    { label: t("footer.terms"), href: "#" }
   ];
 
   const socialLinks = [
@@ -55,34 +64,32 @@ const Footer = () => {
                 <Crown className="w-7 h-7 text-white" />
               </div>
               <div>
-                <h3 className="text-2xl font-bold">Windsor</h3>
+                <h3 className="text-2xl font-bold">Veranda</h3>
                 <p className="text-sm text-white/70 -mt-1">RESIDENCES</p>
               </div>
             </div>
             <p className="text-white/80 leading-relaxed">
-              Experience unparalleled luxury living in the heart of Dubai Marina. 
-              Windsor Residences offers premium apartments with world-class amenities 
-              and exceptional lifestyle experiences.
+              {t("footer.description")}
             </p>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-primary" />
-                <span className="text-white/90">+971 4 123 4567</span>
+                <span className="text-white/90">+998712301331</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-primary" />
-                <span className="text-white/90">info@windsorresidences.ae</span>
+                <span className="text-white/90">info@verandaresidences.uz</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-5 h-5 text-primary" />
-                <span className="text-white/90">Dubai Marina, Dubai, UAE</span>
+                <span className="text-white/90">Mirzo Ulugbek, Tashkent, Uzbekistan</span>
               </div>
             </div>
           </div>
 
           {/* Quick Links */}
           <div className="space-y-6">
-            <h4 className="text-xl font-bold">Quick Links</h4>
+            <h4 className="text-xl font-bold">{t("footer.quickLinks")}</h4>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.label}>
@@ -99,22 +106,19 @@ const Footer = () => {
 
           {/* Services */}
           <div className="space-y-6">
-            <h4 className="text-xl font-bold">Our Services</h4>
+            <h4 className="text-xl font-bold">{t("footer.services")}</h4>
             <ul className="space-y-3 text-white/80">
-              <li>• Property Sales</li>
-              <li>• Investment Consultation</li>
-              <li>• Site Visits</li>
-              <li>• Payment Plans</li>
-              <li>• After-Sales Support</li>
-              <li>• Property Management</li>
+              {services.map((service, index) => (
+                <li key={index}>• {service}</li>
+              ))}
             </ul>
           </div>
 
           {/* Newsletter & Social */}
           <div className="space-y-6">
-            <h4 className="text-xl font-bold">Stay Connected</h4>
+            <h4 className="text-xl font-bold">{t("footer.stayConnected")}</h4>
             <p className="text-white/80">
-              Subscribe to our newsletter for the latest updates and exclusive offers.
+              {t("footer.newsletter")}
             </p>
             
             <div className="space-y-3">
@@ -124,13 +128,13 @@ const Footer = () => {
                 className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:border-primary"
               />
               <Button variant="luxury" size="sm" className="w-full">
-                Subscribe
+                {t("footer.subscribe")}
               </Button>
             </div>
 
             {/* Social Links */}
             <div>
-              <p className="text-white/80 mb-4">Follow us on social media</p>
+              <p className="text-white/80 mb-4">{t("footer.followUs")}</p>
               <div className="flex space-x-4">
                 {socialLinks.map((social) => {
                   const IconComponent = social.icon;
@@ -156,7 +160,7 @@ const Footer = () => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-white/70 text-sm">
-              © 2024 Windsor Residences. All rights reserved.
+              © 2024 Veranda Residences. {t("footer.rights")}
             </div>
             
             <div className="flex flex-wrap justify-center md:justify-end space-x-6">

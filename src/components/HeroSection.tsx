@@ -1,21 +1,39 @@
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, MapPin, Star } from "lucide-react";
+import ImageCarousel from "./ImageCarousel";
+import EnquiryPopup from "./EnquiryPopup";
 import heroImage from "@/assets/hero-veranda.jpg";
+import facade1 from "@/assets/facade-1.webp";
+import facade2 from "@/assets/facade-2.webp";
+import facade3 from "@/assets/facade-3.webp";
+import verandaMain from "@/assets/veranda-main.webp";
 
 const HeroSection = () => {
   const { t } = useTranslation();
+  const [isEnquiryOpen, setIsEnquiryOpen] = useState(false);
+  
+  const carouselImages = [
+    verandaMain,
+    heroImage,
+    facade1,
+    facade2,
+    facade3
+  ];
+  
   return (
-    <section id="home" className="relative min-h-screen flex items-center">
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <img
-          src={heroImage}
-          alt="Veranda Residences Tashkent - Luxury Apartments"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-hero" />
-      </div>
+    <>
+      <section id="home" className="relative min-h-screen flex items-center">
+        {/* Background Carousel */}
+        <div className="absolute inset-0">
+          <ImageCarousel 
+            images={carouselImages}
+            showDots={true}
+            autoplay={true}
+            className="w-full h-full"
+          />
+        </div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4">
@@ -54,13 +72,13 @@ const HeroSection = () => {
           {/* Price Badge */}
           <div className="bg-gradient-gold rounded-lg p-4 mb-8 max-w-sm animate-scale-in">
             <p className="text-white text-sm font-medium">{t("pricing.startingFrom")}</p>
-            <p className="text-white text-3xl font-bold">$180,000</p>
+            <p className="text-white text-3xl font-bold">$71,500</p>
             <p className="text-white/80 text-sm">1-3 {t("pricing.bedroom")} {t("contact.form.interest")}</p>
           </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up">
-            <Button variant="hero" size="xl">
+            <Button variant="hero" size="xl" onClick={() => setIsEnquiryOpen(true)}>
               {t("hero.enquireNow")}
               <ArrowRight className="w-5 h-5" />
             </Button>
@@ -94,6 +112,12 @@ const HeroSection = () => {
         </div>
       </div>
     </section>
+    
+    <EnquiryPopup 
+      isOpen={isEnquiryOpen}
+      onClose={() => setIsEnquiryOpen(false)}
+    />
+  </>
   );
 };
 

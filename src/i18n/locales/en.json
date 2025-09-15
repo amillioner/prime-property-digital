@@ -33,7 +33,8 @@
       "parking": "Private Parking",
       "view": "City Views",
       "balcony": "Spacious Balcony",
-      "storage": "Storage Room"
+      "storage": "Storage Room",
+      "popular": "Most Popular"
     }
   },
   "amenities": {
@@ -118,10 +119,39 @@
   "footer": {
     "description": "Your trusted partner for premium residential complexes in Uzbekistan",
     "quickLinks": "Quick Links",
-    "contactInfo": "Contact Information",
-    "followUs": "Follow Us",
+    "services": "Our Services",
+    "stayConnected": "Stay Connected",
+    "newsletter": "Subscribe to our newsletter for the latest updates and exclusive offers",
+    "subscribe": "Subscribe",
+    "followUs": "Follow us on social media",
     "rights": "All rights reserved",
     "privacy": "Privacy Policy",
-    "terms": "Terms of Service"
+    "terms": "Terms of Service",
+    "services": {
+      "sales": "Property Sales",
+      "consultation": "Investment Consultation", 
+      "visits": "Site Visits",
+      "payment": "Payment Plans",
+      "support": "After-Sales Support",
+      "management": "Property Management"
+    }
+  },
+  "enquiry": {
+    "title": "ENQUIRE NOW",
+    "wePromise": "WE PROMISE",
+    "instantCallback": "INSTANT CALL BACK",
+    "freeSiteVisit": "FREE SITE VISIT", 
+    "unmatchedPrice": "UNMATCHED PRICE",
+    "form": {
+      "name": "Name",
+      "mobileNumber": "Mobile Number",
+      "email": "Email",
+      "submit": "Submit",
+      "consent": "I Consent to The Processing of Provided Data According To Privacy Policy | Terms & Conditions. I Authorize Nova Capital Real Estate and its representatives to Call, SMS, Email or WhatsApp Me About Its Products and Offers. This Consent Overrides Any Registration For DNC/NDNC"
+    },
+    "getInfo": "GET INFORMATION ON AVAILABILITIES",
+    "availableUnits": "Available Units",
+    "paymentPlan": "Payment Plan", 
+    "floorPlans": "Floor Plans"
   }
 }

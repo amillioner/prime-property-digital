@@ -33,7 +33,8 @@
       "parking": "Shaxsiy avtoturargoh",
       "view": "Shahar manzarasi",
       "balcony": "Keng balkon",
-      "storage": "Qo'shimcha xotira"
+      "storage": "Qo'shimcha xotira",
+      "popular": "Eng mashhur"
     }
   },
   "amenities": {
@@ -116,12 +117,41 @@
     }
   },
   "footer": {
-    "description": "O'zbekistondagi premium turar-joy komplekslari uchun ishonchli hamkor",
+    "description": "O'zbekistondagi premium turar joy majmualarida ishonchli hamkoringiz",
     "quickLinks": "Tezkor havolalar",
-    "contactInfo": "Aloqa ma'lumotlari",
-    "followUs": "Bizni kuzatib boring",
+    "services": "Bizning xizmatlar",
+    "stayConnected": "Aloqada qoling",
+    "newsletter": "So'nggi yangiliklar va maxsus takliflar uchun bizning axborot byulletenimizga obuna bo'ling",
+    "subscribe": "Obuna bo'lish",
+    "followUs": "Bizni ijtimoiy tarmoqlarda kuzatib boring",
     "rights": "Barcha huquqlar himoyalangan",
     "privacy": "Maxfiylik siyosati",
-    "terms": "Foydalanish shartlari"
+    "terms": "Xizmat shartlari",
+    "services": {
+      "sales": "Ko'chmas mulk sotish",
+      "consultation": "Investitsiya maslahati",
+      "visits": "Ob'ektni ko'rish",
+      "payment": "To'lov rejalari",
+      "support": "Sotishdan keyingi yordam",
+      "management": "Ko'chmas mulkni boshqarish"
+    }
+  },
+  "enquiry": {
+    "title": "HOZIROQ SO'RANG",
+    "wePromise": "BIZ VA'DA BERAMIZ",
+    "instantCallback": "TEZKOR QAYTA QO'NG'IROQ",
+    "freeSiteVisit": "BEPUL SAYT TASHRIFI",
+    "unmatchedPrice": "TENGSIZ NARX",
+    "form": {
+      "name": "Ism",
+      "mobileNumber": "Mobil raqam",
+      "email": "Elektron pochta",
+      "submit": "Jo'natish",
+      "consent": "Men taqdim etilgan ma'lumotlarni Maxfiylik siyosati | Shartlar va shartlarga muvofiq qayta ishlashga rozilik beraman. Men Nova Capital Real Estate va uning vakillariga o'z mahsulotlari va takliflari haqida qo'ng'iroq qilish, SMS, elektron pochta yoki WhatsApp orqali murojaat qilishga ruxsat beraman. Ushbu rozilik DNC/NDNC-ga har qanday ro'yxatga olishni bekor qiladi"
+    },
+    "getInfo": "MAVJUDLIK HAQIDA MA'LUMOT OLING",
+    "availableUnits": "Mavjud kvartiralar",
+    "paymentPlan": "To'lov rejasi",
+    "floorPlans": "Qavat rejalari"
   }
 }
