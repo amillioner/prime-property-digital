@@ -58,7 +58,7 @@ const ImageCarousel = ({
                 <img
                   src={image}
                   alt={`Veranda Residences ${index + 1}`}
-                  className="max-w-full max-h-full object-contain"
+                  className="max-w-full max-h-full object-fill"
                 />
                 <div className="absolute inset-0 bg-gradient-hero pointer-events-none" />
               </div>

@@ -6,16 +6,6 @@
     "location": "Location",
     "contact": "Contact"
   },
-  "hero": {
-    "title": "Veranda Residences",
-    "subtitle": "The new standard of modern living in Tashkent",
-    "description": "A premium residential complex designed for luxurious living in the perfect location of Mirzo Ulugbek district",
-    "location": "Mirzo Ulugbek, Tashkent • Premium Location",
-    "enquireNow": "Enquire Now",
-    "viewGallery": "View Gallery",
-    "exclusiveOffer": "Exclusive Offer",
-    "limitedTime": "Limited Time"
-  },
   "common": {
     "address": "Mirzo Ulugbek, Tashkent, Uzbekistan"
   },
