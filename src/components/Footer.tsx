@@ -64,7 +64,7 @@ const Footer = () => {
                 <Crown className="w-7 h-7 text-white" />
               </div>
               <div>
-                <h3 className="text-2xl font-bold">Veranda</h3>
+                <h3 className="text-2xl font-bold">Verdana</h3>
                 <p className="text-sm text-white/70 -mt-1">RESIDENCES</p>
               </div>
             </div>
@@ -78,7 +78,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-primary" />
-                <span className="text-white/90">info@verandaresidences.uz</span>
+                <span className="text-white/90">info@verdanaresidences.uz</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-5 h-5 text-primary" />
@@ -160,7 +160,7 @@ const Footer = () => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-white/70 text-sm">
-              © 2024 Veranda Residences. {t("footer.rights")}
+              © 2024 Verdana Residences. {t("footer.rights")}
             </div>
             
             <div className="flex flex-wrap justify-center md:justify-end space-x-6">

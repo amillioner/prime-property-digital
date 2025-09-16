@@ -96,7 +96,7 @@
     "transport": "Transport Links",
     "minutes": "minutes",
     "km": "km",
-    "mapAlt": "Veranda Residences Location Map",
+    "mapAlt": "Verdana Residences Location Map",
     "address": "Mirzo Ulugbek district, Yangi Uzbekistan street",
     "minutesAway": "Minutes Away From Everything",
     "viewMap": "View Interactive Map",
@@ -128,7 +128,7 @@
   },
   "contact": {
     "title": "Get In Touch",
-    "subtitle": "Ready to make Veranda Residences your new home? Contact our expert team today",
+    "subtitle": "Ready to make Verdana Residences your new home? Contact our expert team today",
     "form": {
       "title": "Request Information",
       "subtitle": "Fill out the form and we'll get back to you within 24 hours",
@@ -157,7 +157,7 @@
     "quickActions": {
       "title": "Quick Actions",
       "brochure": "Download Brochure",
-      "brochureDesc": "Get detailed information about Veranda Residences",
+      "brochureDesc": "Get detailed information about Verdana Residences",
       "visit": "Schedule Site Visit",
       "visitDesc": "Book a personal tour of our show apartment",
       "chat": "Live Chat",

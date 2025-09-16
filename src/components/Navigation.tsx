@@ -36,7 +36,7 @@ const Navigation = () => {
               <span className="text-white font-bold text-xl">V</span>
             </div>
             <div>
-              <h2 className="font-bold text-xl text-foreground">Veranda</h2>
+              <h2 className="font-bold text-xl text-foreground">Verdana</h2>
               <p className="text-xs text-muted-foreground -mt-1">RESIDENCES</p>
             </div>
           </div>

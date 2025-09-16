@@ -46,7 +46,7 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: t("contact.info.email"),
-      info: "info@verandaresidences.uz",
+      info: "info@verdanaresidences.uz",
       action: t("contact.info.sendEmail")
     },
     {

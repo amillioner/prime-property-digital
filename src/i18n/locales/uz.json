@@ -96,7 +96,7 @@
     "transport": "Transport aloqasi",
     "minutes": "daqiqa",
     "km": "km",
-    "mapAlt": "Veranda Residences joylashuv xaritasi",
+    "mapAlt": "Verdana Residences joylashuv xaritasi",
     "address": "Mirzo Ulug'bek tumani, Yangi O'zbekiston ko'chasi",
     "minutesAway": "Hamma narsadan daqiqalar",
     "viewMap": "Interaktiv xaritani ko'rish",
@@ -128,7 +128,7 @@
   },
   "contact": {
     "title": "Biz bilan bog'laning",
-    "subtitle": "Veranda Residences-ni yangi uyingiz qilishga tayyormisiz? Bugun mutaxassis jamoamiz bilan bog'laning",
+    "subtitle": "Verdana Residences-ni yangi uyingiz qilishga tayyormisiz? Bugun mutaxassis jamoamiz bilan bog'laning",
     "form": {
       "title": "Ma'lumot so'rash",
       "subtitle": "Shaklni to'ldiring va biz 24 soat ichida sizga javob beramiz",
@@ -157,7 +157,7 @@
     "quickActions": {
       "title": "Tezkor harakatlar",
       "brochure": "Broşyurani yuklab olish",
-      "brochureDesc": "Veranda Residences haqida batafsil ma'lumot oling",
+      "brochureDesc": "Verdana Residences haqida batafsil ma'lumot oling",
       "visit": "Sayt tashrifini rejalashtirish",
       "visitDesc": "Namuna xonamiznining shaxsiy turini bron qiling",
       "chat": "Jonli chat",
