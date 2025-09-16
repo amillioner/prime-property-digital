@@ -9,6 +9,9 @@
   "common": {
     "address": "Mirzo Ulugbek, Tashkent, Uzbekistan"
   },
+  "hero": {
+    "enquireNow": "Enquire Now"
+  },
   "pricing": {
     "title": "Pricing & Plans",
     "subtitle": "Housing options tailored to different needs",

@@ -4,28 +4,31 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, MapPin, Star } from "lucide-react";
 import ImageCarousel from "./ImageCarousel";
 import EnquiryPopup from "./EnquiryPopup";
-import veranda1 from "@/assets/veranda1.jpg";
-import veranda2 from "@/assets/veranda2.jpg";
-import veranda3 from "@/assets/veranda3.jpg";
-import veranda4 from "@/assets/veranda4.jpg";
-import veranda5 from "@/assets/veranda5.jpg";
-import veranda6 from "@/assets/veranda6.jpg";
-import veranda7 from "@/assets/veranda7.jpg";
-import veranda8 from "@/assets/veranda8.jpg";
+import veranda1 from "@/assets/veranda1.webp";
+import veranda2 from "@/assets/veranda2.webp";
+import veranda3 from "@/assets/veranda3.webp";
+import veranda4 from "@/assets/veranda4.webp";
+import veranda5 from "@/assets/veranda5.webp";
+import veranda6 from "@/assets/veranda6.webp";
+import veranda7 from "@/assets/veranda7.webp";
+import veranda8 from "@/assets/veranda8.webp";
+import heroVeranda from "@/assets/hero-veranda.jpg";
+import interiorLuxury from "@/assets/interior-luxury.jpg";
+import verandaMain from "@/assets/veranda-main.webp";
+import amenityPool from "@/assets/amenity-pool.jpg";
 
 const HeroSection = () => {
   const { t } = useTranslation();
   const [isEnquiryOpen, setIsEnquiryOpen] = useState(false);
   
   const carouselImages = [
-    veranda1,
-    veranda2,
-    veranda3,
-    veranda4,
-    veranda5,
-    veranda6,
-    veranda7,
-    veranda8
+      heroVeranda,
+      veranda2,
+      veranda3,
+      veranda5,
+      veranda6,
+      veranda7,
+      veranda8
   ];
   
   return (

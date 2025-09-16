@@ -9,6 +9,9 @@
   "common": {
     "address": "Mirzo Ulug'bek, Toshkent, O'zbekiston"
   },
+  "hero": {
+    "enquireNow": "Ma'lumot olish"
+  },
   "pricing": {
     "title": "Narx va reja",
     "subtitle": "Turli ehtiyojlar uchun moslashtirilgan turar-joy variantlari",

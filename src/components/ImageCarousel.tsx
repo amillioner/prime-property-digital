@@ -54,13 +54,12 @@ const ImageCarousel = ({
         <CarouselContent>
           {images.map((image, index) => (
             <CarouselItem key={index}>
-              <div className="relative w-full h-full flex items-center justify-center bg-black/10">
+              <div className="relative w-full h-full flex items-center justify-center">
                 <img
                   src={image}
                   alt={`Veranda Residences ${index + 1}`}
                   className="max-w-full max-h-full object-fill"
                 />
-                <div className="absolute inset-0 bg-gradient-hero pointer-events-none" />
               </div>
             </CarouselItem>
           ))}
